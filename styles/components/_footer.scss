@@ -1,0 +1,24 @@
+@import '../../styles/abstract/variables';
+
+@mixin bg-colors($direction, $colors...) {
+    @if $direction == left{
+        background: linear-gradient(to left, $colors);    
+    }@else {
+        background: linear-gradient(to right, $colors);
+    }
+    
+}
+
+footer {
+    text-align: center;
+    font-size: $font-size / 2;
+    border-top: 2px solid $main-color;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    @include bg-colors('left', $main-color, $secundary-color, $tertiary-color);
+
+    i {
+        color: red;
+    }
+}
+   

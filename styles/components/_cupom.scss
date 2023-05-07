@@ -1,0 +1,60 @@
+@import '../../styles/abstract/variables';
+
+#cupom {
+    background-color: $tertiary-color;
+    padding: 4rem;
+    text-align: center;
+
+    .text {
+        color: $main-color;
+
+        h2 {
+            margin: 2rem;
+            font-size: $font-size / 1.7;
+        }
+    }
+
+    .input {
+        margin: 0 auto;
+        width: 575px;
+        border-radius: 20px;
+        border: 4px solid white;
+        background-color: white;
+
+        input {
+            border-radius: 20px;
+            height: 40px;
+            width: 540px;
+            border: none;
+            outline: none;
+            font-size: 26px;
+        }
+
+        &:hover, &:focus-within {
+            box-shadow: 1px 1px 8px 1px $main-color;
+            outline: none;
+        }
+    }
+
+    button {
+        text-transform: uppercase;
+        margin-top: 1rem;
+        outline: none;
+        height: 40px;
+        width: 130px;
+        background-color: $secundary-color;
+        color: $main-color;
+        letter-spacing: 1px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px $main-color;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: $main-color;
+            color: $secundary-color;
+            border-color: $main-color;
+        }
+    }
+}
